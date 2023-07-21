@@ -13,7 +13,21 @@ import {
 import Blog from '../artifacts/contracts/Blog.sol/Blog.json'
 
 /* define the ipfs endpoint */
-const client = create('https://ipfs.infura.io:5001/api/v0')
+// const client = create('https://ipfs.infura.io:5001/api/v0')
+const projectId = process.env.NEXT_PUBLIC_INFURA_IPFS_ID;
+const projectSecret = process.env.NEXT_PUBLIC_INFURA_IPFS_SECRET;
+
+const auth =
+  "Basic " + Buffer.from(projectId + ":" + projectSecret).toString("base64");
+const client = create({
+  host: "ipfs.infura.io",
+  // host: "ipfs.io",
+  port: 5001,
+  protocol: "https",
+  headers: {
+    authorization: auth,
+  },
+});
 
 /* configure the markdown editor to be client-side import */
 const SimpleMDE = dynamic(
