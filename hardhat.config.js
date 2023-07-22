@@ -14,5 +14,12 @@ module.exports = {
     //   url: "https://polygon-rpc.com/",
     //   accounts: [process.env.pk]
     // }
+    matic: {
+      // Infura
+      // url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
+      // url: "https://rpc-mainnet.maticvigil.com",
+      url: "https://polygon-mainnet.infura.io/v3/4c6ab311f61749c087a62d58ca91f1b3",
+      accounts: [process.env.pk]
+    }
   }
 };
