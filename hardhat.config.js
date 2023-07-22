@@ -8,18 +8,18 @@ module.exports = {
     },
     mumbai: {
       url: "https://polygon-mumbai.infura.io/v3/4c6ab311f61749c087a62d58ca91f1b3",
-      accounts: [process.env.pk]
+      accounts: [process.env.PRIVATE_KEY]
     },
     // polygon: {
     //   url: "https://polygon-rpc.com/",
-    //   accounts: [process.env.pk]
+    //   accounts: [process.env.PRIVATE_KEY]
     // }
     matic: {
       // Infura
       // url: `https://polygon-mainnet.infura.io/v3/${infuraId}`,
       // url: "https://rpc-mainnet.maticvigil.com",
       url: "https://polygon-mainnet.infura.io/v3/4c6ab311f61749c087a62d58ca91f1b3",
-      accounts: [process.env.pk]
+      accounts: [process.env.PRIVATE_KEY]
     }
   }
 };
