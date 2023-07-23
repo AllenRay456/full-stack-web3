@@ -12,7 +12,7 @@ import {
 } from '../../config'
 import Blog from '../../artifacts/contracts/Blog.sol/Blog.json'
 
-const ipfsURI = 'https://ipfs.io/ipfs/'
+const ipfsURI = 'https://allenray.infura-ipfs.io/ipfs'
 
 export default function Post({ post }) {
   const account = useContext(AccountContext)
